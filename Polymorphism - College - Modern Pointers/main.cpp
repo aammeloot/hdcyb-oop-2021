@@ -14,9 +14,9 @@ int main(int argc, const char * argv[]) {
     
     College c;
     
-    c.addPerson(shared_ptr<Person> (new Student("John", "Computing")));
-    c.addPerson(shared_ptr<Person> (new Person("Fred")));
-    c.addPerson(shared_ptr<Person> (new Lecturer("Aurelien", "C++")));
+    c.addPerson((shared_ptr<Person>)(make_shared<Student>("John", "C++"));
+    c.addPerson(make_shared<Person>("Fred"));
+    c.addPerson((shared_ptr<Person>)make_shared<Lecturer>("Aurélien", "C++"));
     
     c.introduceEveryone();
     
